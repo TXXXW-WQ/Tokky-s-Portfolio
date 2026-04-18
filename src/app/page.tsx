@@ -3,14 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <main>
-        <div className="flex flex col item-strech justify-start">
-          <div >
-            <h1>Tokky's Portfolio</h1>
-            <p>Hello World</p>
-          </div>
-        </div>
-      </main>
+      <div className="sticcy top-0 flex bg-white">
+        <h1 className="flex1 right-1 text-[2rem]  bg-black">Tokky's Portfolio</h1>
+      </div>
     </div>
   );
 }
