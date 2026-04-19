@@ -43,7 +43,7 @@ export default function Home() {
       <main className="mt-6 mx-8 bg-amber-200  text-black space-y-4">
 
         {/* タイトル要素 */}
-        <div className="flex flex-col items-center bg-sky-200">
+        <div className="flex flex-col items-center bg-sky-200 font-bold">
           <h1 className="text-[2rem]">Tokky Lab</h1>
           <p>Lerning & Works</p>
           <div>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="w-full bg-sky-200 py-10">
-          <div className="px-6 mb-4 text-xl font-bold">Projects [cite: 1]</div>
+          <h1 className="px-6 mb-4 text-xl font-bold text-[2rem]">Projects</h1>
 
           {/* ビューポート（Emblaの基本構造） */}
           <div className="overflow-hidden touch-pan-y cursor-grab select-none relative" ref={emblaRef}>
@@ -92,7 +92,7 @@ export default function Home() {
             {/* ナビゲーションボタン*/}
             <button
               onClick={scrollPrev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all"
+              className="absolute left-[calc(50%-300px)] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all"
               aria-label="Previous slide"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
@@ -100,7 +100,7 @@ export default function Home() {
 
             <button
               onClick={scrollNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all"
+              className="absolute right-[calc(50%-300px)] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all"
               aria-label="Next slide"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
