@@ -109,6 +109,11 @@ export default function Home() {
           </div>
 
         </div>
+
+        {/* GitHub */}
+        <div className="w-full bg-sky-200 py-10">
+          <h1 className="px-6 mb-4 text-xl font-bold text-[2rem]">GitHub</h1>
+        </div>
       </main>
     </div>
   );
