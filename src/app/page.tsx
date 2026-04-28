@@ -36,7 +36,7 @@ export default function Home() {
     <div>
 
       {/* ヘッダー */}
-      <div className="sticcy top-0 flex bg-white">
+      <div className="fixed sticky top-0 flex bg-white">
         <h1 className="flex1 right-1 text-[2rem]  bg-black">Tokky's Portfolio</h1>
       </div>
 
@@ -111,8 +111,13 @@ export default function Home() {
         </div>
 
         {/* GitHub */}
-        <div className="w-full bg-sky-200 py-10">
-          <h1 className="px-6 mb-4 text-xl font-bold text-[2rem]">GitHub</h1>
+        <div className="relative overflow-hidden w-full bg-sky-200 py-40">
+          {/* 背景の巨大文字(GitHub) */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 select-none">
+            <span className="text-[12rem] md:text-[20rem] font-bold text-[var(--ds-gray-alpha-100)] leading-none text-black/[0.5]">
+              GitHub
+            </span>
+          </div>
         </div>
 
         {/* Leaning */}
